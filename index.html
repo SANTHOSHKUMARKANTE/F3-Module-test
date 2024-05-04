@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geek Coin Table</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cryptocurrency Data</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    
-  </div>
+<h1>Cryptocurrency Data</h1>
+<div>
+    <label for="searchInput">Search by Name or Symbol:</label>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="button1">Sort by Market Cap</button>
+    <button id="button2">Sort by Percentage Change</button>
+</div>
+<table id="cryptoTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Market Cap</th>
+            <th>24h % Change</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="cryptoTableBody">
+    </tbody>
+</table>
+<script src="script.js"></script>
 </body>
 </html>
